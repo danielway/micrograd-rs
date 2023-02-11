@@ -1,6 +1,6 @@
 //! This is a basic example of performing gradient descent with a neural network using micrograd-rs.
 
-use micrograd_rs::{MLP, Value};
+use micrograd_rs::{Value, MLP};
 
 fn main() {
     let mlp = MLP::new(3, vec![4, 4, 1]);
@@ -30,11 +30,7 @@ fn main() {
             .map(|(yp, yg)| (yp - yg).pow(&Value::from(2.0)))
             .sum();
 
-        println!(
-            "Loss: {} Predictions: {:?}",
-            loss.data(),
-            ypred_floats
-        );
+        println!("Loss: {} Predictions: {:?}", loss.data(), ypred_floats);
 
         // Backward pass
         mlp.parameters().iter().for_each(|p| p.clear_gradient());
