@@ -1,3 +1,6 @@
+mod value;
+pub use crate::value::Value;
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
