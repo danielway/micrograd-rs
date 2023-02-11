@@ -1,0 +1,10 @@
+[package]
+name = "micrograd-rs"
+description = "Rust implementation of Andrej Karpathy's micrograd scalar-valued engine with basic neural network."
+authors = ["Daniel Way <contact@danieldway.com>"]
+version = "0.0.1"
+edition = "2021"
+repository = "https://github.com/danielway/micrograd-rs"
+exclude = [".github"]
+
+[dependencies]
