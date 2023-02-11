@@ -2,6 +2,7 @@ use crate::value::Value;
 
 use rand::{thread_rng, Rng};
 
+#[derive(Clone)]
 pub struct Neuron {
     weights: Vec<Value>,
     bias: Value,

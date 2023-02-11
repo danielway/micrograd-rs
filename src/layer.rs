@@ -1,5 +1,6 @@
 use crate::{neuron::Neuron, value::Value};
 
+#[derive(Clone)]
 pub struct Layer {
     neurons: Vec<Neuron>,
 }

@@ -1,5 +1,6 @@
 use crate::{layer::Layer, value::Value};
 
+#[derive(Clone)]
 pub struct MLP {
     layers: Vec<Layer>,
 }
