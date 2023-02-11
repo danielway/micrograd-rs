@@ -7,6 +7,9 @@ pub use crate::neuron::Neuron;
 mod layer;
 pub use crate::layer::Layer;
 
+mod mlp;
+pub use crate::mlp::MLP;
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
