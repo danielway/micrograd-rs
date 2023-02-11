@@ -8,3 +8,4 @@ repository = "https://github.com/danielway/micrograd-rs"
 exclude = [".github"]
 
 [dependencies]
+rand = "0.8.5"
